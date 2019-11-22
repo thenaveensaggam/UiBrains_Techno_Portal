@@ -1,0 +1,273 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+/* ------------------ Main Header ------------------ */
+.main-header{
+    background: white url("../images/image5.jpeg") no-repeat scroll center;
+    color: white;
+    padding: 12px;
+    text-align: right;
+    box-shadow: 0 0 10px black;
+}
+
+/* ------------------ Main Navbar ------------------ */
+.main-nav{
+    background-color: black;
+    padding: 5px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: row;
+}
+.main-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+}
+.main-nav a:hover{
+    background: linear-gradient(45deg,darkslategray,#935348);
+    border-radius: 50px;
+}
+.main-nav a.active{
+    background: linear-gradient(45deg,darkslategray,darkred);
+    border-radius: 50px;
+}
+
+/* ------------------ Main Content Section ------------------ */
+.main-content-section{
+    text-align: center;
+    margin: 15px 0;
+}
+.main-content-article{
+    border: 2px solid darkred;
+    width: 330px;
+    display: inline-grid;
+    height: 500px;
+    margin: 5px;
+    border-radius: 30px 0 30px 0;
+    transition: all 0.5s;
+}
+.main-content-article:hover{
+    width: 340px;
+    box-shadow: 0 0 10px darkred;
+    cursor: pointer;
+}
+.main-content-article img{
+    width: 100%;
+}
+.main-content-article h2{
+    color: darkred;
+}
+/* ------------------ Main News Section ------------------ */
+.main-news-section{
+    width: 80%;
+    margin: auto;
+}
+.main-news-article{
+    box-shadow: 0 0 10px darkred;
+    border-radius: 10px;
+    background-color: #fff5f3;
+}
+.main-news-article h2{
+    background: linear-gradient(45deg,darkslategray,#935348);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+.main-news-article p{
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+.zoom{
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px black;
+    overflow: hidden;
+}
+.zoom img{
+    border-radius: 10px;
+    width: inherit;
+    height: inherit;
+    transition: all 0.5s;
+    opacity: 0.8;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* ------------------ Main Footer ------------------ */
+.main-footer{
+    background: linear-gradient(45deg,darkslategray,#935348);
+    text-align: center;
+    padding: 12px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+.main-footer a{
+    color: coral;
+}
+
+/* ------------------ Gallery Section ------------------ */
+.gallery-section{
+    text-align: center;
+    margin: 15px 0;
+}
+.gallery-figure{
+    border: 2px solid darkred;
+    width: 300px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.gallery-figure:hover{
+    box-shadow: 0 0 10px darkred;
+}
+.gallery-zoom{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.gallery-zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 5px 5px 0 0 ;
+    transition: all 0.5s;
+}
+.gallery-zoom:hover img{
+    border-radius: 5px 5px 0 0 ;
+    transform: scale(1.2,1.2);
+
+}
+.gallery-figure figcaption{
+    background: linear-gradient(45deg,darkslategray,#935348);
+    color: white;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+/* ------------------------------ About Us --------------------- */
+.about-section{
+    width: 80%;
+    margin: auto;
+}
+.about-article{
+    background:white url("../images/gallery_mobile_3.jpg") no-repeat top;
+    color: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 0 10px black;
+}
+.client-images{
+    text-align: center;
+}
+.client-images img{
+    width: 250px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 0 5px black;
+}
+
+/* ---------------------- Contact Us Section ----------------- */
+.contact-section{
+    background: white url("../images/image5.jpeg") no-repeat scroll bottom;
+    padding: 12px;
+}
+.contact-div{
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    color: #968067;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #968067;
+}
+.contact-div h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.contact-form input[type="text"] ,
+.contact-form input[type="email"]{
+    font-size: 18px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 3px solid #968067;
+    color: white;
+    margin: 5px 0;
+}
+.contact-form input[type="text"]:focus ,
+.contact-form input[type="email"]:focus{
+    border-bottom: 3px solid #d2b9a0;
+}
+.contact-form textarea{
+    background: transparent;
+    border: 3px solid #968067;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    outline: none;
+    width: 200px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.contact-form textarea:focus{
+    border: 3px solid #d2b9a0;
+}
+::placeholder{
+    color: #d2b9a0;
+}
+.contact-form .submit-btn{
+    background: linear-gradient(45deg,black,#968067);
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding: 10px 25px;
+    color: #d2b9a0;
+    width: 200px;
+    border-radius: 50px;
+}
+.contact-form .submit-btn:hover{
+    box-shadow: 0 0 10px #968067;
+    cursor: pointer;
+}
+@media (max-width: 750px) {
+    .main-nav{
+        flex-direction: column;
+    }
+    .main-nav a{
+        margin: 5px;
+    }
+    .zoom{
+        width: 450px;
+        height: 300px;
+    }
+}
+@media (max-width: 610px) {
+    .main-nav{
+        flex-direction: column;
+    }
+    .main-nav a{
+        margin: 5px;
+    }
+    .zoom{
+        width: 350px;
+        height: 200px;
+    }
+}
+
+
+
